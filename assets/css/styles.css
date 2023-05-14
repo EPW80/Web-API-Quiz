@@ -1,0 +1,147 @@
+/* universal formatting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body styling */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  width: 60%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* header styling */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.scores a,
+.timer {
+  font-size: 20px;
+}
+
+.scores a {
+  color: #000;
+  cursor: pointer;
+}
+
+.scores a:hover {
+  color: #aaaaaa;
+}
+
+/* Start Quiz */
+.start-quiz {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #aaaaaa;
+  border-top: 1px solid;
+  color: #aaaaaa;
+  margin: 20px 0;
+  font-style: italic;
+  text-align: center;
+}
+
+/* button styling */
+.btn-grid {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  width: 30%;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+button {
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  width: auto;
+  overflow: visible;
+  padding: 10px;
+  background-color: #6a0dad;
+  border-radius: 10px;
+  font-size: medium;
+  margin: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* hover over me to see */
+button:hover {
+  background-color: #aaaaaa;
+}
+
+.hide {
+  display: none;
+}
+
+/*  you are correct sir */
+.btn.correct {
+  background-color: #39ff14;
+}
+
+/* soooooorrrrryy wrong */
+.btn.wrong {
+  background-color: #ff0000;
+}
+
+/* Wrapper */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* initials */
+input[type='text'] {
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid;
+  color: #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* highscores */
+.highscore {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.name-div,
+.score-div {
+  flex: 1 35%;
+  padding: 10px 0;
+  border: 1px solid;
+  color: #000;
+}
+
+/* I needed to add this since I viewed an old project without this query and felt horrible */
+/* applied on any screen smaller than 575px */
+@media screen and (max-width: 575px) {
+  .btn-grid {
+    grid-template-rows: repeat(1, auto);
+    gap: 0;
+    margin: 0;
+  }
+}
