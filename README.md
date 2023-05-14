@@ -6,9 +6,9 @@ Upon completion of the quiz, you'll have an opportunity to review your score. Fo
 
 ## Built:
 
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ## Demo:
 
